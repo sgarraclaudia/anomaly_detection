@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 import sys
 import time
-import pyod
 from sklearn.metrics import precision_recall_fscore_support
 from sklearn.metrics import confusion_matrix
 from pyod.models.abod import ABOD
