@@ -18,9 +18,6 @@ columns = ["date","ClusterLatitude","ClusterLongitude","Delay","Percentage","InP
 
 for n in n_clusters:
     dataset_name = "aggr_" + str(n)
-    # data pipeline
-    filename_dates = "dates/" + dataset_name + "_100.txt"
-    dates = pd.read_csv(filename_dates, delimiter=' ')
 
     filename_data_train = "Datasets/" + dataset_name + ".txt.red.txt"
     filename_data_pred = "Datasets/" + dataset_name + ".txt.red_test.txt"
@@ -70,7 +67,7 @@ for n in n_clusters:
     print(np.shape(data_pred))
 
     # ground truth (anomaly yes/ no)
-    real_classes = data_gt.drop(['date'], axis=1)
+    real_classes = data_gt.copy()
     real_classes = np.array(real_classes).flatten()
 
     start = time.time()
@@ -78,7 +75,6 @@ for n in n_clusters:
     print("ABOD model trained")
     stop = time.time()
     print(f"Training time: {stop - start}s")
-    print("Isolation Forest trained")
 
     ABOD_model_predictions = ABOD_model.predict(data_pred)
     ABOD_model_predictions = np.where(ABOD_model_predictions == 1, 0, ABOD_model_predictions)
