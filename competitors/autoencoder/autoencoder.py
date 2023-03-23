@@ -7,7 +7,7 @@ from keras.layers import Dense
 import scipy.spatial.distance as spdist
 
 # ******************************************************************************************
-from tensorflow.keras.optimizers import Adam
+from keras.optimizers import Adam
 
 os.environ['KERAS_BACKEND']='tensorflow'
 
@@ -76,18 +76,20 @@ def train_single_model(data, encoding_dim, epochs, batch_size, l_rate, min_max_s
 
     print('MSE on training instances', np.mean(mse_r), ' - std. dev. ', np.std(mse_r))
 
-    self_avg_distances = spdist.pdist(encoded)
-    print("Distance calculation done")
+    # self_avg_distances = spdist.pdist(encoded)
+    # print("Distance calculation done")
 
-    self_avg = np.mean(self_avg_distances)
-    self_std = np.std(self_avg_distances)
+    # self_avg = np.mean(self_avg_distances)
+    # self_std = np.std(self_avg_distances)
 
-    print("Self average distance for first embedding: " + str(self_avg))
-    print("Self std. dev for first embedding: " + str(self_std))
+    # print("Self average distance for first embedding: " + str(self_avg))
+    # print("Self std. dev for first embedding: " + str(self_std))
 
+    # model = {'model_id': model_id, 'autoencoder': autoencoder, 'encoder': encoder, 'decoder': decoder,
+    #          'mse_avg': np.mean(mse), 'mse_std': np.std(mse), 'embedding': encoded, 'avg_dist': self_avg, 'dist_stdev': self_std,
+    #          'min_max_scaler': min_max_scaler}
     model = {'model_id': model_id, 'autoencoder': autoencoder, 'encoder': encoder, 'decoder': decoder,
-             'mse_avg': np.mean(mse), 'mse_std': np.std(mse), 'embedding': encoded, 'avg_dist': self_avg, 'dist_stdev': self_std,
-             'min_max_scaler': min_max_scaler}
+             'mse_avg': np.mean(mse), 'mse_std': np.std(mse), 'embedding': encoded, 'min_max_scaler': min_max_scaler}
 
     return model
 
