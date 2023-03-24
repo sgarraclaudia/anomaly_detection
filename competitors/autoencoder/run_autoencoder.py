@@ -18,7 +18,7 @@ columns = ["date","ClusterLatitude","ClusterLongitude","Delay","Percentage","InP
 
 threshold = [1.5, 3.0]
 
-ae_encoding_dim = [4, 8]
+ae_encoding_dim = [2, 4]
 
 ae_epochs = 50
 ae_batch_size = 32
