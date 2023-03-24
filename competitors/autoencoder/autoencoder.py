@@ -86,8 +86,8 @@ def train_single_model(data, encoding_dim, epochs, batch_size, l_rate, min_max_s
     # print("Self std. dev for first embedding: " + str(self_std))
 
     # model = {'model_id': model_id, 'autoencoder': autoencoder, 'encoder': encoder, 'decoder': decoder,
-    #          'mse_avg': np.mean(mse), 'mse_std': np.std(mse), 'embedding': encoded, 'avg_dist': self_avg, 'dist_stdev': self_std,
-    #          'min_max_scaler': min_max_scaler}
+    #           'mse_avg': np.mean(mse), 'mse_std': np.std(mse), 'embedding': encoded, 'avg_dist': self_avg, 'dist_stdev': self_std,
+    #           'min_max_scaler': min_max_scaler}
     model = {'model_id': model_id, 'autoencoder': autoencoder, 'encoder': encoder, 'decoder': decoder,
              'mse_avg': np.mean(mse), 'mse_std': np.std(mse), 'embedding': encoded, 'min_max_scaler': min_max_scaler}
 
