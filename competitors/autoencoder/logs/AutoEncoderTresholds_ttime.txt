@@ -1,0 +1,288 @@
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+6198/6198 [==============================] - 3s 415us/step
+6198/6198 [==============================] - 3s 407us/step
+MSE on training instances 0.0039982526  - std. dev.  0.0066943336
+AE trained
+Training time: 280.36650800704956s
+Predicting on test with reconstruction mode and T=1.5
+Anomaly threshold 0.036573133897036314
+<class 'numpy.ndarray'>
+347/347 [==============================] - 0s 440us/step
+347/347 [==============================] - 0s 449us/step
+Original data size:  11089
+Anomalies detected:  136
+Cleaned data size:  10953
+Anomaly detection with AE model:
+Selected training data length: 198312
+(11089, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+6198/6198 [==============================] - 4s 653us/step
+6198/6198 [==============================] - 4s 683us/step
+MSE on training instances 0.0038358402  - std. dev.  0.006575941
+AE trained
+Training time: 452.3061697483063s
+Predicting on test with reconstruction mode and T=3.0
+Anomaly threshold 0.0681434387806803
+<class 'numpy.ndarray'>
+347/347 [==============================] - 0s 708us/step
+347/347 [==============================] - 0s 704us/step
+Original data size:  11089
+Anomalies detected:  116
+Cleaned data size:  10973
+Anomaly detection with AE model:
+Selected training data length: 198312
+(11089, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+6198/6198 [==============================] - 3s 425us/step
+6198/6198 [==============================] - 3s 415us/step
+MSE on training instances 0.00056345714  - std. dev.  0.001825728
+AE trained
+Training time: 487.62188243865967s
+Predicting on test with reconstruction mode and T=1.5
+Anomaly threshold 0.007756447943393141
+<class 'numpy.ndarray'>
+347/347 [==============================] - 0s 428us/step
+347/347 [==============================] - 0s 414us/step
+Original data size:  11089
+Anomalies detected:  118
+Cleaned data size:  10971
+Anomaly detection with AE model:
+Selected training data length: 198312
+(11089, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+6198/6198 [==============================] - 4s 675us/step
+6198/6198 [==============================] - 4s 630us/step
+MSE on training instances 0.0006220071  - std. dev.  0.0018645078
+AE trained
+Training time: 522.2859270572662s
+Predicting on test with reconstruction mode and T=3.0
+Anomaly threshold 0.014978617196902633
+<class 'numpy.ndarray'>
+347/347 [==============================] - 0s 765us/step
+347/347 [==============================] - 0s 848us/step
+Original data size:  11089
+Anomalies detected:  116
+Cleaned data size:  10973
+Anomaly detection with AE model:
+Selected training data length: 399677
+(24078, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+12490/12490 [==============================] - 10s 760us/step
+12490/12490 [==============================] - 8s 599us/step
+MSE on training instances 0.004113232  - std. dev.  0.006489016
+AE trained
+Training time: 937.498539686203s
+Predicting on test with reconstruction mode and T=1.5
+Anomaly threshold 0.03611147729679942
+<class 'numpy.ndarray'>
+753/753 [==============================] - 1s 878us/step
+753/753 [==============================] - 1s 765us/step
+Original data size:  24078
+Anomalies detected:  329
+Cleaned data size:  23749
+Anomaly detection with AE model:
+Selected training data length: 399677
+(24078, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+12490/12490 [==============================] - 5s 376us/step
+12490/12490 [==============================] - 5s 381us/step
+MSE on training instances 0.0040305327  - std. dev.  0.006469346
+AE trained
+Training time: 579.6928057670593s
+Predicting on test with reconstruction mode and T=3.0
+Anomaly threshold 0.0679426179267466
+<class 'numpy.ndarray'>
+753/753 [==============================] - 0s 390us/step
+753/753 [==============================] - 0s 385us/step
+Original data size:  24078
+Anomalies detected:  269
+Cleaned data size:  23809
+Anomaly detection with AE model:
+Selected training data length: 399677
+(24078, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+12490/12490 [==============================] - 5s 400us/step
+12490/12490 [==============================] - 5s 388us/step
+MSE on training instances 0.00054964144  - std. dev.  0.001181129
+AE trained
+Training time: 544.8970639705658s
+Predicting on test with reconstruction mode and T=1.5
+Anomaly threshold 0.005009003740269691
+<class 'numpy.ndarray'>
+753/753 [==============================] - 0s 394us/step
+753/753 [==============================] - 0s 384us/step
+Original data size:  24078
+Anomalies detected:  296
+Cleaned data size:  23782
+Anomaly detection with AE model:
+Selected training data length: 399677
+(24078, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+12490/12490 [==============================] - 5s 382us/step
+12490/12490 [==============================] - 5s 388us/step
+MSE on training instances 0.00055057753  - std. dev.  0.0012655356
+AE trained
+Training time: 560.8702492713928s
+Predicting on test with reconstruction mode and T=3.0
+Anomaly threshold 0.009787426330149174
+<class 'numpy.ndarray'>
+753/753 [==============================] - 0s 393us/step
+753/753 [==============================] - 0s 372us/step
+Original data size:  24078
+Anomalies detected:  273
+Cleaned data size:  23805
+Anomaly detection with AE model:
+Selected training data length: 910724
+(59879, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+28461/28461 [==============================] - 10s 364us/step
+28461/28461 [==============================] - 11s 372us/step
+MSE on training instances 0.00436219  - std. dev.  0.006779388
+AE trained
+Training time: 1198.3809900283813s
+Predicting on test with reconstruction mode and T=1.5
+Anomaly threshold 0.026987812481820583
+<class 'numpy.ndarray'>
+1872/1872 [==============================] - 1s 371us/step
+1872/1872 [==============================] - 1s 375us/step
+Original data size:  59879
+Anomalies detected:  1735
+Cleaned data size:  58144
+Anomaly detection with AE model:
+Selected training data length: 910724
+(59879, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+28461/28461 [==============================] - 10s 366us/step
+28461/28461 [==============================] - 10s 358us/step
+MSE on training instances 0.0042740796  - std. dev.  0.0067417
+AE trained
+Training time: 1161.0607347488403s
+Predicting on test with reconstruction mode and T=3.0
+Anomaly threshold 0.04772161366418004
+<class 'numpy.ndarray'>
+1872/1872 [==============================] - 1s 389us/step
+1872/1872 [==============================] - 1s 371us/step
+Original data size:  59879
+Anomalies detected:  642
+Cleaned data size:  59237
+Anomaly detection with AE model:
+Selected training data length: 910724
+(59879, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+28461/28461 [==============================] - 23s 814us/step
+28461/28461 [==============================] - 23s 799us/step
+MSE on training instances 0.00041842574  - std. dev.  0.00093083567
+AE trained
+Training time: 2303.213837146759s
+Predicting on test with reconstruction mode and T=1.5
+Anomaly threshold 0.0038864297966938466
+<class 'numpy.ndarray'>
+1872/1872 [==============================] - 2s 846us/step
+1872/1872 [==============================] - 2s 819us/step
+Original data size:  59879
+Anomalies detected:  687
+Cleaned data size:  59192
+Anomaly detection with AE model:
+Selected training data length: 910724
+Original data size:  59879
+Anomalies detected:  638
+Cleaned data size:  59241
+Anomaly detection with AE model:
+Selected training data length: 1577192
+(108834, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+49288/49288 [==============================] - 20s 401us/step
+49288/49288 [==============================] - 22s 449us/step
+MSE on training instances 0.0030473997  - std. dev.  0.004965052
+AE trained
+Training time: 3110.6018760204315s
+Predicting on test with reconstruction mode and T=1.5
+Anomaly threshold 0.02293605310842395
+<class 'numpy.ndarray'>
+3402/3402 [==============================] - 3s 816us/step
+3402/3402 [==============================] - 2s 689us/step
+Original data size:  108834
+Anomalies detected:  2553
+Cleaned data size:  106281
+Anomaly detection with AE model:
+Selected training data length: 1577192
+(108834, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+49288/49288 [==============================] - 19s 391us/step
+49288/49288 [==============================] - 19s 388us/step
+MSE on training instances 0.0029798078  - std. dev.  0.0049644276
+AE trained
+Training time: 2165.5760967731476s
+Predicting on test with reconstruction mode and T=3.0
+Anomaly threshold 0.04467839142307639
+<class 'numpy.ndarray'>
+3402/3402 [==============================] - 1s 392us/step
+3402/3402 [==============================] - 1s 403us/step
+Original data size:  108834
+Anomalies detected:  1101
+Cleaned data size:  107733
+Anomaly detection with AE model:
+Selected training data length: 1577192
+(108834, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+49288/49288 [==============================] - 19s 383us/step
+49288/49288 [==============================] - 19s 385us/step
+MSE on training instances 0.00032299303  - std. dev.  0.00089051935
+AE trained
+Training time: 2052.4261813163757s
+Predicting on test with reconstruction mode and T=1.5
+Anomaly threshold 0.0034535800223238766
+<class 'numpy.ndarray'>
+3402/3402 [==============================] - 1s 386us/step
+3402/3402 [==============================] - 1s 415us/step
+Original data size:  108834
+Anomalies detected:  1303
+Cleaned data size:  107531
+Anomaly detection with AE model:
+Selected training data length: 1577192
+(108834, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+49288/49288 [==============================] - 20s 399us/step
+49288/49288 [==============================] - 20s 400us/step
+MSE on training instances 0.00032105937  - std. dev.  0.0008680103
+AE trained
+Training time: 2055.8470056056976s
+Predicting on test with reconstruction mode and T=3.0
+Anomaly threshold 0.006336261023534462
+<class 'numpy.ndarray'>
+3402/3402 [==============================] - 1s 402us/step
+3402/3402 [==============================] - 1s 416us/step
+Original data size:  108834
+Anomalies detected:  1128
+Cleaned data size:  107706
+(182816, 10)
+<class 'pandas.core.frame.DataFrame'>
+<class 'numpy.ndarray'>
+79582/79582 [==============================] - 59s 737us/step
+79582/79582 [==============================] - 62s 776us/step
+MSE on training instances 0.00018198688  - std. dev.  0.0008745705
+AE trained
+Training time: 6302.556918144226s
+Predicting on test with reconstruction mode and T=3.0
+Anomaly threshold 0.006859815679490566
+<class 'numpy.ndarray'>
+5713/5713 [==============================] - 5s 836us/step
+5713/5713 [==============================] - 5s 853us/step
+Original data size:  182816
+Anomalies detected:  1993
+Cleaned data size:  180823
+Anomaly detection with AE model:
