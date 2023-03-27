@@ -1,9 +1,11 @@
-import os
 import numpy as np
 import pandas as pd
 import sys
-import time
+import holidays
+import datetime
 
+
+norway_holidays = holidays.country_holidays('NO')
 np.set_printoptions(threshold=sys.maxsize)
 
 n_clusters = [5, 10, 25, 50, 100]
@@ -11,7 +13,7 @@ n_clusters = [5, 10, 25, 50, 100]
 columns = ["date","ClusterLatitude","ClusterLongitude","Delay","Percentage","InPanic","InCongestion",
            "DestinationAimedArrivalTime","OriginAimedDepartureTime","HeadwayService_False","anomaly"]
 
-new_columns = ["year","month","day","hour","minute",
+new_columns = ["date","year","month","day","hour","minute","weekDay", "holiday",
                "ClusterLatitude","ClusterLongitude","Delay","Percentage","InPanic","InCongestion",
                "DestinationAimedArrivalTime","OriginAimedDepartureTime","HeadwayService_False","anomaly"]
 
@@ -35,6 +37,17 @@ for n in n_clusters:
     data_train_full['day'] = data_train_full['date'].dt.day
     data_train_full['hour'] = data_train_full['date'].dt.hour
     data_train_full['minute'] = data_train_full['date'].dt.minute
+
+    
+    data_train_full['weekDay'] =  data_train_full['date'].dt.dayofweek
+    # add a new column "holiday" to the dataframe and set the value to 1 if the date is a holiday, otherwise set the value to 0
+    for index, row in data_train_full.iterrows():
+        if datetime.date(row['year'], row['month'], row['day']) in norway_holidays:
+            data_train_full.at[index, 'holiday'] = 1
+        else:
+            data_train_full.at[index, 'holiday'] = 0
+
+
     #________________________________________________________
     data_pred_full = pd.read_csv(filename_data_pred,
                 parse_dates=['date'],
@@ -54,11 +67,15 @@ for n in n_clusters:
     data_pred_full['day'] = data_pred_full['date'].dt.day
     data_pred_full['hour'] = data_pred_full['date'].dt.hour
     data_pred_full['minute'] = data_pred_full['date'].dt.minute
+    
+    data_pred_full['weekDay'] =  data_pred_full['date'].dt.dayofweek
+    # add a new column "holiday" to the dataframe and set the value to 1 if the date is a holiday, otherwise set the value to 0
+    for index, row in data_pred_full.iterrows():
+        if datetime.date(row['year'], row['month'], row['day']) in norway_holidays:
+            data_pred_full.at[index, 'holiday'] = 1
+        else:
+            data_pred_full.at[index, 'holiday'] = 0
     #________________________________________________________
-
-    # remove the "date" column from both data_train_full and data_pred_full
-    data_train_full.drop(['date'], axis=1, inplace=True)
-    data_pred_full.drop(['date'], axis=1, inplace=True)
 
     # create new data_train_full and data_pred_full with the new columns
     new_data_train_full = data_train_full.loc[:, new_columns]
