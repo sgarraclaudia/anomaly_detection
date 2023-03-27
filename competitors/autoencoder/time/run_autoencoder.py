@@ -13,13 +13,13 @@ np.set_printoptions(threshold=sys.maxsize)
 
 n_clusters = [5, 10, 25, 50, 100]
 
-columns = ["year","month","day","hour","minute",
+columns = ["date","year","month","day","hour","minute","weekDay", "holiday",
                "ClusterLatitude","ClusterLongitude","Delay","Percentage","InPanic","InCongestion",
                "DestinationAimedArrivalTime","OriginAimedDepartureTime","HeadwayService_False","anomaly"]
 
 threshold = [1.5, 3.0]
 
-ae_encoding_dim = [3, 6]
+ae_encoding_dim = [4, 8] #this is the sqrt of 15 and its double
 
 ae_epochs = 50
 ae_batch_size = 32
@@ -32,6 +32,7 @@ for n in n_clusters:
     filename_data_pred = "Datasets/time_features/" + dataset_name + "_test.csv"
 
     data_train_full = pd.read_csv(filename_data_train,
+                parse_dates=['date'],
                 na_values=[0.0])
 
     data_train_full.fillna(0, inplace=True)
@@ -65,10 +66,12 @@ for n in n_clusters:
             pred_real_ae = []
 
             train_data = data_train_full.drop(['year'], axis=1)
+            train_data = data_train_full.drop(['date'], axis=1)
             print("Selected training data length: " + str(len(train_data)))
 
             # current day data for prediction
             data_pred = data_pred_full.drop(['year'], axis=1)
+            data_pred = data_pred_full.drop(['date'], axis=1)
             print(np.shape(data_pred))
 
             # ground truth (anomaly yes/ no)
