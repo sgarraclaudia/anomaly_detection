@@ -1,0 +1,75 @@
+Selected training data length: 198312
+(11089, 16)
+Training time: 0.14980769157409668s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 198312
+(11089, 16)
+Training time: 0.23427605628967285s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 198312
+(11089, 16)
+Training time: 0.5883698463439941s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 399677
+(24078, 16)
+Training time: 0.2758195400238037s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 399677
+(24078, 16)
+Training time: 0.4556717872619629s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 399677
+(24078, 16)
+Training time: 1.1368420124053955s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 910724
+(59879, 16)
+Training time: 0.5754735469818115s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 910724
+(59879, 16)
+Training time: 1.0599164962768555s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 910724
+(59879, 16)
+Training time: 2.5442798137664795s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 1577192
+(108834, 16)
+Training time: 0.9449789524078369s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 1577192
+(108834, 16)
+Training time: 1.7893428802490234s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 1577192
+(108834, 16)
+Training time: 4.3533265590667725s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 2546608
+(182816, 16)
+Training time: 1.464280366897583s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 2546608
+(182816, 16)
+Training time: 2.8464343547821045s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
+Selected training data length: 2546608
+(182816, 16)
+Training time: 6.97944450378418s
+Isolation Forest trained
+Anomaly detection with Isolation Forest model..
