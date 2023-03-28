@@ -1,0 +1,105 @@
+Selected training data length: 198312
+(11089, 16)
+Training time: 20.709622859954834s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 198312
+(11089, 16)
+Training time: 71.57852387428284s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 198312
+(11089, 16)
+Training time: 22.80229425430298s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 399677
+(24078, 16)
+Training time: 103.76150846481323s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 399677
+(24078, 16)
+Training time: 95.47649598121643s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 399677
+(24078, 16)
+Training time: 100.27819633483887s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 910724
+(59879, 16)
+Training time: 503.42917823791504s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 910724
+(59879, 16)
+Training time: 490.11126470565796s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 910724
+(59879, 16)
+Training time: 495.22806096076965s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 1577192
+(108834, 16)
+Training time: 1467.3767161369324s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 1577192
+(108834, 16)
+Training time: 1513.4648034572601s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 1577192
+(108834, 16)
+Training time: 1544.1735436916351s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 2546608
+(182816, 16)
+Training time: 3877.213865995407s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 2546608
+(182816, 16)
+Training time: 4869.297632932663s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
+Selected training data length: 2546608
+(182816, 16)
+Training time: 3907.9902441501617s
+Local outlier factor trained
+C:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but LocalOutlierFactor was fitted with feature names
+  warnings.warn(
+Anomaly detection with Local Outlier Factor model..
