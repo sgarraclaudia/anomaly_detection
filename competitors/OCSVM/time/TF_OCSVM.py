@@ -11,30 +11,28 @@ from sklearn.metrics import confusion_matrix
 np.set_printoptions(threshold=sys.maxsize)
 
 n_clusters = [5, 10, 25, 50, 100]
+#nu = [0.1, 0.5, 1.0]
 nu = 0.1
+#kernel = ["linear","rbf"]
 kernel = "linear"
 gamma = 'auto'
 
-columns = ["date","year","month","day","hour","minute","weekDay", "holiday",
-               "ClusterLatitude","ClusterLongitude","Delay","Percentage","InPanic","InCongestion",
-               "DestinationAimedArrivalTime","OriginAimedDepartureTime","HeadwayService_False","anomaly"]
+columns = ["date", "year", "month", "day", "hour", "minute", "weekDay", "holiday","ClusterLatitude","ClusterLongitude","Delay","Percentage","InPanic","InCongestion",
+           "DestinationAimedArrivalTime","OriginAimedDepartureTime","HeadwayService_False","anomaly"]
 
 for n in n_clusters:
     dataset_name = "TF_aggr_" + str(n)
-    filename_data_train = "Datasets/time_features/" + dataset_name + "_train.csv"
-    filename_data_pred = "Datasets/time_features/" + dataset_name + "_test.csv"
 
-    data_train_full = pd.read_csv(filename_data_train,
-                parse_dates=['date'],
-                na_values=[0.0])
+    filename_data_train = "Datasets/" + dataset_name + "_train.csv"
+    filename_data_pred = "Datasets/" + dataset_name + "_test.csv"
+
+    data_train_full = pd.read_csv(filename_data_train, na_values=[0.0])
 
     data_train_full.fillna(0, inplace=True)
 
     data_train_full = data_train_full.loc[:, columns]
     #________________________________________________________
-    data_pred_full = pd.read_csv(filename_data_pred,
-                parse_dates=['date'],
-                na_values=[0.0])
+    data_pred_full = pd.read_csv(filename_data_pred, na_values=[0.0])
 
     data_pred_full.fillna(0, inplace=True)
 
@@ -58,7 +56,6 @@ for n in n_clusters:
 
     list_of_rows_ocsvm = []
     pred_real_ocsvm = []
-
 
     train_data = data_train_full.copy()
     train_data = train_data.drop(['date'], axis=1)
