@@ -7,11 +7,12 @@ import datetime
 norway_holidays = holidays.country_holidays('NO')
 
 n_clusters = [5, 10, 25, 50, 100]
+neighbors = 40
 
 dataset_folder = 'Datasets/'
 
-path_folder = 'Competitors/ABOD/logs/'
-model_name = 'ABOD'
+path_folder = 'competitors/LocalOutlierFactor/logs/'
+model_name = 'LOF'
 dataset_prrefix = 'aggr_'
 
 columns_newfile = ["date", "prediction", "realValue", "actual_accuracy"]
@@ -21,9 +22,8 @@ df_final = pd.DataFrame(columns=columns_newfile)
 
 # read the dataset
 for cluster in n_clusters:
-
     # read the preds.log
-    labels = pd.read_csv(path_folder + dataset_prrefix + str(cluster) + '_'+ model_name + '/' + model_name + '.preds.log', header=None, sep=',')
+    labels = pd.read_csv(path_folder + dataset_prrefix + str(cluster) + '_'+ model_name + '_' + 'num_neig_' + str(neighbors) +'_novelty_True'+ '/' + model_name + '.preds.log', header=None, sep=',')
 
     dataset = pd.read_csv(dataset_folder+ dataset_prrefix + str(cluster) + '.txt.red_test.txt', sep=',', parse_dates=["date"], na_values=[0.0])
     
@@ -49,5 +49,5 @@ for cluster in n_clusters:
         df_final = df_final.append({'date': date, 'prediction': prediction, 'realValue': realValue, 'actual_accuracy': current_accuracy}, ignore_index=True)
 
     # save the dataframe df_final to a csv file
-    df_final.to_csv(path_folder + dataset_prrefix + str(cluster) + '_'+ model_name + '/' +'accuracy.csv', index=False)
+    df_final.to_csv(path_folder + dataset_prrefix + str(cluster) + '_'+ model_name + '_' + 'num_neig_' + str(neighbors) +'_novelty_True'+ '/' + model_name +'accuracy.csv', index=False)
 
